@@ -15,7 +15,7 @@ export class TodoItem extends Component {
         return (
             <div style={ this.getStyle() }>
                 <p>
-                    <input type="checkbox" onChange={ this.props.markComplete.bind(this, id ) } checked={ completed ? 'checked': '' }/>{' '}
+                    <input type="checkbox" onChange={ this.props.toggleTodo.bind(this, id) } checked={ completed ? 'checked': '' }/>{' '}
                     {title}
                     <button onClick={this.props.delTodo.bind(this, id)} style={{ float: 'right' }}>
                         <i className="fa fa-trash" aria-hidden="true"></i>

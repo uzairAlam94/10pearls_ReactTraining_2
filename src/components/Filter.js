@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
 
-import { connect } from 'react-redux';
-
-import { addTodo } from "../actions/todos";
-
-export class AddTodo extends Component {
-    state = {
-        title: ''
-    }
-
+export class Filter extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addTodo(this.state.title);
@@ -39,5 +31,4 @@ export class AddTodo extends Component {
     }
 }
 
-
-export default connect(null, { addTodo })(AddTodo);
+export default Filter;
