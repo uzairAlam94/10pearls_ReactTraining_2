@@ -42,3 +42,63 @@
 // }
 
 // Parent Child Component Relation -----------------------------------
+
+// LifeCycle -----------------------------------------------------
+// class LifeCycle extends React.Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             toggle: true
+//         }
+//         console.log("constructor");
+//     }
+
+//     static getDerivedStateFromProps() {
+//         console.log("getDerivedStateFromProps");
+//     }
+
+//     shouldComponentUpdate() {
+//         console.log("shouldComponentUpdate");
+//         return true;
+//     }
+
+//     getSnapshotBeforeUpdate() {
+//         console.log("getSnapshotBeforeUpdate");
+//     }
+
+//     componentDidMount () {
+//         console.log("componentDidMount");
+//     }
+
+//     componentDidUpdate () {
+//         console.log("componentDidUpdate");
+//     }
+
+//     componentWillUnmount() {
+//         console.log("componentWillUnmount");
+//     }
+
+//     reRender = () => {
+//         this.setState({ toggle: !this.state.toggle });
+//     }
+
+//     render() {
+//         console.log("render");
+//         return <button onClick={this.reRender}></button>
+//     }
+// }
+// LifeCycle -----------------------------------------------------
+
+
+// Binding ------------------
+// var car = {
+//     name: 'BMW',
+//     tasks: ['transform', 'upgrade'],
+//     showTasks: function() {
+//       this.tasks.forEach(function(task) {
+//         console.log(this.name + " wants to " + task);
+//       });
+//     }
+// };
+
+  // Binding-------------------

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 export class TodoItem extends Component {
     getStyle = () => {
@@ -19,19 +18,12 @@ export class TodoItem extends Component {
                     <input type="checkbox" onChange={ this.props.markComplete.bind(this, id ) } checked={ completed ? 'checked': '' }/>{' '}
                     {title}
                     <button onClick={this.props.delTodo.bind(this, id)} style={{ float: 'right' }}>
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i className="fa fa-trash" aria-hidden="true"></i>
                     </button>
                 </p>
             </div>
         )
     }
-}
-
-// PropTypes
-TodoItem.PropTypes = {
-    todos: PropTypes.object.isRequired,
-    markComplete: PropTypes.func.isRequired,
-    delTodo: PropTypes.func.isRequired
 }
 
 
